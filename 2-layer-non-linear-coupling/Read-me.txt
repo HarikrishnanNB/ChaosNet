@@ -143,7 +143,7 @@ var = 98 # b and q works for this particular random state
 method = "TT-SS" # or TT
 epsilon = 0.01
 
-To Run the file (for example: python main.py --data_name "exoplanet")
+To Run the file (for example: python main_2_layer-non_linear_coupling.py --data_name "exoplanet")
 
 
 If the user wants to apply the method for a new data. The user have to call the data in load_data.py. Also it is important to find the q and b for the new dataset. This part is a trial and error method as of now.
