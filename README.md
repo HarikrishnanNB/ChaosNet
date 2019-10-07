@@ -46,102 +46,174 @@ details = "short" returns predicted label and mean representation vector of last
 The following are the parameters used. The parameters are found in parameterfile.py 
 
 ### MNIST
+
 #--------------------------------------------
 a = 0.0
+
 c = 1.0
+
 b = 0.3310 # Found by hyperparametertuning 
+
 q = 0.336
+
 length = 20000
+
 num_classes = 10
+
 samples_per_class = 21
+
 check = "Sk-B"
+
 details = "full"
+
 var = 42
+
 method = "TT-SS" # or TT
+
 epsilon = 0.01
 
 ### IRIS 
+
 #--------------------------------------
+
 a = 0.0
+
 c = 1.0
+
 q =0.6000 # Found by hyperparametertuning 
+
 b = 0.9867556
+
 length = 20000
+
 num_classes = 3
+
 samples_per_class = 7
+
 check = "Sk-B"
+
 details = "full"
+
 var = 42
+
 method = "TT-SS" # or TT
+
 epsilon = 0.01
 
 ### Exoplanet 
 ------------------------
 
 a = 0.0
+
 c = 1.0
+
 b =0.149 # Found by hyperparametertuning 
+
 q = 0.26242424242424245
+
 length = 20000
+
 num_classes = 3
+
 samples_per_class = 7
+
 check = "Sk-T"
+
 details = "full"
+
 var = 42
+
 method = "TT-SS" # or TT
+
 epsilon = 0.01
 
 ### Exoplanet with no surface temperature parameters
 #---------------------------------------
 
 a = 0.0
+
 c = 1.0
+
 b =0.149 # Found by hyperparametertuning 
+
 q = 0.26242424242424245
+
 length = 20000
+
 num_classes = 3
+
 samples_per_class = 7
+
 check = "Sk-T"
+
 details = "full"
+
 var = 42
+
 method = "TT-SS" # or TT
+
 epsilon = 0.01
 
 
+
 ### Exoplanet with restricted features
+
 #--------------------------------------
 a = 0.0
-c = 1.0
-b = 0.4760 # Found by hyperparametertuning 
-q = 0.9500000000000006
-length = 20000
-num_classes = 3
-samples_per_class = 7
-check = "Sk-T"
-details = "full"
-var = 42
-method = "TT-SS" # or TT
-epsilon = 0.001
 
+c = 1.0
+
+b = 0.4760 # Found by hyperparametertuning 
+
+q = 0.9500000000000006
+
+length = 20000
+
+num_classes = 3
+
+samples_per_class = 7
+
+check = "Sk-T"
+
+details = "full"
+
+var = 42
+
+method = "TT-SS" # or TT
+
+epsilon = 0.001
 
 
 
 ### KDDCUP
 #----------------------------------------
+
 a = 0.0
+
 c = 1.0
-b = 0.3350 # Found by hyperparametertuning 
+
+b = 0.3350 # Found by hyperparametertuning
+
 q = 0.6000
+
 length = 20000
+
 num_classes = 9
+
 samples_per_class = 7
+
 check = "Sk-T"
+
 details = "full"
+
 var = 98 # b and q works for this particular random state
+
 method = "TT-SS" # or TT
+
 epsilon = 0.01
 
-To Run the code(for example: python main.py --data_name "exoplanet")
+
+## To Run the code(for example: python main.py --data_name "exoplanet")
 
 
 If the user wants to apply the method for a new data. The user have to call the data in load_data.py. Also it is important to find the q and b for the new dataset. This part is a trial and error method as of now.
